@@ -1,12 +1,12 @@
 function FindProxyForURL(url, host) {
     console.log('start!');
 
-    if (shExpMatch(host, '2ip.ru')) {
+    if (shExpMatch(host, '*.2ip.ru')) {
         return 'PROXY 151.80.9.177:3128;';
     }
 
     if (shExpMatch(host, '*.yandex.ru')) {
-        console.log('match!');
+        return 'PROXY 151.80.9.177:3128;';
     }
 
     return "DIRECT";
