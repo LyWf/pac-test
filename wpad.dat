@@ -1,7 +1,7 @@
 function FindProxyForURL(url, host) {
     console.log('start!');
 
-    if (shExpMatch(host, '*.2ip.ru')) {
+    if (shExpMatch(host, '*.proxy-sale.com')) {
         return 'PROXY 151.80.9.177:3128;';
     }
 
