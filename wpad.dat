@@ -1,0 +1,7 @@
+function FindProxyForURL(url, host) {
+    if (shExpMatch(host, '*.yandex.ru')) {
+        console.log('match!');
+    }
+
+    return "DIRECT";
+}
